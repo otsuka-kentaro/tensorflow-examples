@@ -15,6 +15,7 @@ $ python -m venv $(pwd)
 ```
 $ cd {directory}
 $ source bin/activate
+$ pip install -r requirements.txt
 ```
 
 ### deactivate venv
