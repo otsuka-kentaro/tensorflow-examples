@@ -1,29 +1,23 @@
 # tensorflow-examples
 
+## Requirements
+* python >= 3.3
+
 ## SetUp
 
-### install virtualenv
+### create venv
 ```
-$ pip install virtualenv
+$ cd {directory}
+$ python -m venv $(pwd)
 ```
 
-### activate virtualenv
+### activate venv
 ```
 $ cd {directory}
 $ source bin/activate
 ```
 
-### deactivate virtualenv
+### deactivate venv
 ```
 $ deactivate
-```
-
-### use pyenv-virtualenv if you use virtualenv
-https://github.com/pyenv/pyenv-virtualenv
-
-### create venv
-```
-$ cd {directory}
-$ pyenv virtualenv $(basename $(pwd))
-$ pyenv activate $(basename $(pwd))
 ```
