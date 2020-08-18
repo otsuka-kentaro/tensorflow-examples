@@ -6,10 +6,14 @@ np.set_printoptions(precision=3)
 
 
 class Test(tf.keras.Model):
+    """
+    forward/backward 内で tf.split を使用した際に backward の引数の variables の順序がばらばらになるか調査
+    """
+
     def __init__(self):
         super(Test, self).__init__()
-        self.a = tf.Variable(10.0)
-        self.b = tf.Variable(20.0)
+        self.a = tf.Variable(10.0, name="a")
+        self.b = tf.Variable(20.0, name="b")
 
     @tf.custom_gradient
     def forward(self, x):

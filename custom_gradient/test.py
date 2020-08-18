@@ -3,6 +3,11 @@ import argparse
 
 
 class Test(tf.keras.Model):
+    """
+    custom_gradient のテスト
+    backward で負の値を指定することで、伝搬した際に誤差を大きくしてみる
+    """
+
     def __init__(self):
         super(Test, self).__init__()
         self.a = tf.Variable(1.0)
