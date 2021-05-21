@@ -1,5 +1,5 @@
 # install
-tensorflow==2.3.0
+tensorflow==2.5.0
 
 # dependencies
 absl-py==0.9.0
